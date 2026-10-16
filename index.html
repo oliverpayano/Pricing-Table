@@ -5,7 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price Comparison Table</title>
 </head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+</style>
 <body>
+    <header>
+        <h1>Acme Plans</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>Compare Our Plans</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Feature</th>
+                    <th scope="col">Free</th>
+                    <th scope="col">Pro</th>
+                    <th scope="col">Business</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Storage</th>
+                    <td>5 GB</td>
+                    <td>100 GB</td>
+                    <td>1 TB</td>
+                </tr>
+                <tr>
+                    <th scope="row">Projects</th>
+                    <td>3</td>
+                    <td>25</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <th scope="row">Support</th>
+                    <td>Email</td>
+                    <td>Priority Email</td>
+                    <td>24/7 Phone</td>
+                </tr>    
+                <tr>
+                    <td colspan="4">All plans include SSL and daily backups.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer> 
+        <p>&copy; 2026 Acme Plans. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
